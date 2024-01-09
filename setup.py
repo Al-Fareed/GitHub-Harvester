@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
     name="fetchrepo",
-    version="2.0.1",
+    version="2.1.2",
     packages=find_packages(),
     author="Al-Fareed",
     description="Fetches and returns required content from github repository",

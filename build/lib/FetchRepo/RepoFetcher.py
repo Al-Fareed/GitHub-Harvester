@@ -22,9 +22,9 @@ def _is_binary(data):
 def _read_ignore_files(file_path):
     return [
         ".gitignore", "README.md", ".DS_Store", "package-lock.json","assets/","asset/",
-        "image/","img/","pictures/","pics/","picture/","pic/",
-        "package.json", ".github/", "images/", ".prettierrc", ".vscode/"
-        "node_modules/", "tsconfig.json", "LICENSE", "build/","dist/","lib/",
+        "image/","img/","pictures/","pics/","picture/","pic/","gradle/","gradle-wrapper.properties",
+        "package.json", ".github/", "images/", ".prettierrc", ".vscode/","gradlew.bat",".gitattributes","settings.gradle",
+        "node_modules/", "tsconfig.json", "LICENSE", "build/","dist/","lib/","gradlew",".idea/",
         ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", 
         ".mp4", ".mkv", ".avi", ".mov", ".wmv", ".flv",  
         ".mp3", ".wav", ".ogg", ".flac", ".aac",
@@ -113,7 +113,3 @@ def harvest_github_repo(repo_link, branch=None, access_token=None):
     repo_content = _print_repo_content_json(repo_content, root_directory, ignore_files)
 
     return repo_content
-
-if __name__ == "__main__":
-    code = harvest_github_repo("https://github.com/Al-Fareed/Portfolio",branch="master",access_token="")
-    print(code)

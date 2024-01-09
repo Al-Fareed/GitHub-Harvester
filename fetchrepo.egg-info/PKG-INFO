@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fetchrepo
-Version: 2.0.1
+Version: 2.1.2
 Summary: Fetches and returns required content from github repository
 Author: Al-Fareed
 Description-Content-Type: text/markdown
